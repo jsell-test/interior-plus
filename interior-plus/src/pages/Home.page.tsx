@@ -6,6 +6,7 @@ import Header from "../components/common/Header.component";
 import NavMenu from "../components/Home/NavMenu.component";
 import ProductList from "../components/Home/ProductList.component";
 import ProductListSetting from "../components/Home/ProductListSetting";
+import Footer from "../components/common/Footer.component";
 
 // import context
 import { HomeContext } from "../context/HomeContext.context";
@@ -45,10 +46,11 @@ const HomePage = () => {
 
   return (
     <HomeContext.Provider value={valueContextValue}>
-      <Header info={{ pageTitle: "Hello" }} />
+      <Header info={{ pageTitle: "INTERIOR PLUS" }} />
       <NavMenu />
       <ProductListSetting />
       <ProductList />
+      <Footer />
     </HomeContext.Provider>
   );
 };
