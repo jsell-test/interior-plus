@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10%;
+  height: 10vh;
 `;
 
 export const PageTitle = styled.p`

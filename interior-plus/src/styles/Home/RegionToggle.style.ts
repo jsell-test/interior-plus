@@ -2,7 +2,7 @@ import styled from "styled-components";
 import * as Color from "../../constants/color";
 
 export const ToggleWrap = styled.div`
-  width: 30%;
+  width: 40%;
   height: 5%;
   background-color: #fff;
   border-radius: 20px;
@@ -10,7 +10,6 @@ export const ToggleWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 `;
 
 export const Selected = styled.span`

@@ -4,9 +4,9 @@ import { useEffect, useMemo, useState } from "react";
 // import components
 import Header from "../components/common/Header.component";
 import NavMenu from "../components/Home/NavMenu.component";
-import ProductList from "../components/Home/ProductList.component";
 import ProductListSetting from "../components/Home/ProductListSetting";
 import Footer from "../components/common/Footer.component";
+import FurnitureContainer from "../components/Home/FurnitureContainer";
 
 // import context
 import { HomeContext } from "../context/HomeContext.context";
@@ -47,9 +47,10 @@ const HomePage = () => {
   return (
     <HomeContext.Provider value={valueContextValue}>
       <Header info={{ pageTitle: "INTERIOR PLUS" }} />
+
       <NavMenu />
       <ProductListSetting />
-      <ProductList />
+      <FurnitureContainer />
       <Footer />
     </HomeContext.Provider>
   );
