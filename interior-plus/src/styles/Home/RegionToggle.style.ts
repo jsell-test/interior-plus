@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as Color from "../../constants/color";
 
 export const ToggleWrap = styled.div`
   width: 30%;
@@ -14,7 +15,7 @@ export const ToggleWrap = styled.div`
 
 export const Selected = styled.span`
   color: white;
-  background-color: #ea374f;
+  background-color: ${Color.PRIMARY_BLUE};
   padding: 10px 15px;
   border-radius: 20px;
   display: grid;

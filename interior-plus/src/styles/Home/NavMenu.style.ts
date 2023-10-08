@@ -1,9 +1,10 @@
 import styled from "styled-components";
+import * as Color from "../../constants/color";
 
 export const MenuContainer = styled.div`
   width: 90%;
   height: 30%;
-  background-color: #ccc;
+  background-color: ${Color.BACKGROUND_BLUE};
   border-radius: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

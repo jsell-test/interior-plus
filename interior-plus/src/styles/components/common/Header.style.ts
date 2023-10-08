@@ -5,7 +5,6 @@ export const HeaderContainer = styled.header`
   justify-content: space-around;
   align-items: center;
   height: 10%;
-  background-color: red;
 `;
 
 export const PageTitle = styled.p`

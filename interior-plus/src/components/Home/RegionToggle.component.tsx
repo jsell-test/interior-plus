@@ -1,17 +1,16 @@
-// import interface
-import { RegionToggleInfo } from "../../interfaces/RegionToggleInfo";
-
 // import style
 import * as S from "../../styles/Home/RegionToggle.style";
 
-type Props = {
-  props: RegionToggleInfo;
-};
+// import context
+import { HomeContext } from "../../context/HomeContext.context";
+import { useContext } from "react";
 
-const RegionToggle = ({ props }: Props) => {
+const RegionToggle = () => {
+  const value = useContext(HomeContext);
+
   return (
-    <S.ToggleWrap onClick={() => props.toggleHandler()}>
-      {props.toggleValue === "all" ? (
+    <S.ToggleWrap onClick={() => value.selectRegionHandler()}>
+      {value.toggleRegion === "all" ? (
         <>
           <S.Selected>전국</S.Selected>
           <S.ToggleItem_Right>동네</S.ToggleItem_Right>

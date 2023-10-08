@@ -1,9 +1,13 @@
 import { getData } from ".";
 import { GetRecentFurniture } from "../interfaces/RecentFurnitureInfo";
 
-const getRecentFurniture = async (): Promise<GetRecentFurniture[]> => {
+const getRecentFurniture = async (
+  region: string
+): Promise<GetRecentFurniture[]> => {
   try {
-    const response = await getData<GetRecentFurniture[]>("/home", {params:{region: }});
+    const response = await getData<GetRecentFurniture[]>("/home", {
+      params: { region },
+    });
     return response.result;
   } catch (error) {
     console.log(error);
